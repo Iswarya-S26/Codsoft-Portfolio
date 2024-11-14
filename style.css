@@ -1,0 +1,41 @@
+/*NAVBAR*/
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+nav ul a:hover {
+  color: #0dcaf0;
+}
+nav form {
+  gap: 10px;
+}
+nav .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav form .icons:first-child {
+  background-color: #848787;
+}
+nav form .icons:first-child:hover {
+  background-color: #d8dbdb;
+  transform: scale(1.1);
+}
+nav form .icons:last-child {
+  background-color: #0072b1;
+}
+nav form .icons:last-child:hover {
+  background-color: #149ee9;
+  transform: scale(1.1);
+}
