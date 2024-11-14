@@ -232,3 +232,80 @@ nav form .icons:last-child:hover {
   width: 100%;
   object-fit: cover;
 }
+
+/*PROJECTS*/
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .container * {
+  padding: 0;
+  margin: 0;
+}
+.projects .container .box {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .container .box .item {
+  width: 350px;
+  background-color: #191924;
+  padding: 35px 24px;
+  border-radius: 18px;
+
+  box-shadow: 0px 3px 8px 3px rgba(37, 80, 89, 0.74);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.projects .container .box .item:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0px 3px 8px 11px rgba(37, 80, 89, 0.74);
+}
+.projects .container .box .item .thumbnail {
+  height: 150px;
+  background-color: red;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.projects .container .box img {
+  object-fit: contain;
+  height: 100%;
+}
+.projects .container .box .skills-box {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 10px 0;
+}
+.projects .container .box .skills-box .skill {
+  background-color: #255059;
+  color: #8ec5e2;
+  font-weight: 600;
+  border-radius: 11px;
+  padding: 2px 8px;
+  font-size: 13px;
+}
+.projects .container .box h3 {
+  color: #ccc;
+  font-size: 22px;
+}
+.projects .container .box h3 + p {
+  font-size: 15px;
+  margin: 7px 0;
+}
+.projects .container .box .btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.projects .container .box .btn-box a {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.projects .container .box .btn-box a:hover {
+  background-color: #255059;
+  border-color: #255059;
+  color: #ccc;
+}
