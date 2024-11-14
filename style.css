@@ -171,7 +171,7 @@ nav form .icons:last-child:hover {
   margin: 0;
 }
 .education .container .brief {
-  width: 580px;
+  width: fit-content;
   padding: 25px;
   border: 2px solid rgba(13, 202, 240, 0.5);
   border-radius: 15px;
@@ -205,6 +205,12 @@ nav form .icons:last-child:hover {
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .education .container .brief {
+    width: 580px;
+  }
+}
+
 /*CERTIFICATION*/
 .certification .container {
   display: flex;
@@ -213,24 +219,60 @@ nav form .icons:last-child:hover {
 }
 .certification .container .items {
   display: flex;
+  flex-direction: column;
   gap: 50px;
   margin: 25px 0;
 }
 .certification .container .item {
   border: 5px solid #0dcaf0;
   border-style: double;
-  height: 400px;
-  width: 550px;
+
+  height: 200px;
+  width: 250px;
 
   transition: transform 0.3s ease;
 }
 .certification .container .item:hover {
-  transform: scale(1.6);
+  transform: scale(1.4);
 }
 .certification .container .item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .certification .container .item {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .certification .container .item {
+    height: 300px;
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .certification .container .items {
+    flex-direction: row;
+  }
+  .certification .container .item:hover {
+    transform: scale(1.4);
+  }
+  .certification .container .item {
+    height: 280px;
+    width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .certification .container .item:hover {
+    transform: scale(1.6);
+  }
+  .certification .container .item {
+    height: 320px;
+    width: 400px;
+  }
 }
 
 /*PROJECTS*/
