@@ -1,4 +1,8 @@
 /*NAVBAR*/
+/* nav {
+  position: sticky;
+  top: 0;
+} */
 nav ul {
   display: flex;
   gap: 20px;
@@ -51,7 +55,7 @@ nav form .icons:last-child:hover {
   font-weight: 600;
   color: #0dcaf0;
 }
-.about .about-info {
+.words {
   color: #ccc;
   text-align: justify;
 }
@@ -101,4 +105,50 @@ nav form .icons:last-child:hover {
     display: flex;
     flex-direction: row-reverse;
   }
+}
+
+/*Skills*/
+.skills .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.skills .container h1 + p {
+  font-size: 18px;
+}
+.skills .container .box {
+  border: 1px solid #0dcaf0;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 0px 35px 16px rgba(13, 202, 240, 0.82);
+  -moz-box-shadow: 2px 0px 35px 16px rgba(13, 202, 240, 0.82);
+  box-shadow: 2px 0px 35px 16px rgba(13, 202, 240, 0.82);
+  padding: 30px 20px;
+  width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.skills .container .box .item {
+  border: 1px solid #8b8a8a;
+  border-radius: 5px;
+  padding: 13px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.skills .container .box .item img {
+  height: 35px;
+}
+
+.skills .container .box .item span {
+  font-size: 16px;
+  color: #8b8a8a;
+}
+.skills .container .box .item:hover {
+  background-color: #05839c;
+}
+.skills .container .box .item:hover span {
+  color: #fff;
 }
