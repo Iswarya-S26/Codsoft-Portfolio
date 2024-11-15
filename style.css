@@ -229,16 +229,38 @@ nav form .icons:last-child:hover {
 
   height: 200px;
   width: 250px;
+  position: relative;
 
   transition: transform 0.3s ease;
 }
 .certification .container .item:hover {
   transform: scale(1.4);
+  z-index: 99;
 }
 .certification .container .item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.certification .container .item a {
+  /* display: none; */
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  padding: 5px 10px;
+}
+.certification .container .item a span {
+  font-size: 18px;
+}
+.certification .container .item:hover a {
+  display: inline-block;
+  top: -35px;
+  opacity: 1;
+  transform: scale(0.7);
 }
 
 @media (min-width: 576px) {
